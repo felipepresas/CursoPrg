@@ -28,10 +28,6 @@ int main (){
 } //final de la funcion principal
 
 
-
-
-
-
 /* Tipos de datos
 400 -> numero entero (integer)
 3,14 -> numero decimal (Float)
@@ -42,3 +38,4 @@ verdadero falso (bool) -> true false (boolean)
 
 funciones
 */
+
