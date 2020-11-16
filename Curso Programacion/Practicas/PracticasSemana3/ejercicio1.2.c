@@ -25,13 +25,15 @@ int main (){
 	//Cadena 1
 	printf("Introduce la primera: ");
 	gets(c1);
-	//Cadena 2
-	printf("Introduce la segunda: ");
-	gets(c2);
-	strcpy(c1,c2);//lo que hay en la segunda se copia a la primera
+	
+
+	strcpy(c2,c1);//lo que hay en la segunda se copia a la primera
 	printf("Cadena copiada %s\n",c1);
 	printf("Tu cadena mide %d caracteres\n", sizeof(c1));//mide lo que le puse arriba osea 30
-	numstrlen=strlen(c2);//tamaño de letras de c2
-   	printf ("El numero de letras es: %d" , numstrlen);
+	// numstrlen=strlen(c2);//tamaño de letras de c2
+   	printf ("El numero de letras es: %d \n" ,strlen(c2));
+    printf("Cadena copiada %s\n",c2);
+    
+    system("pause");
 
 } //FINAL DE FUNCION.
