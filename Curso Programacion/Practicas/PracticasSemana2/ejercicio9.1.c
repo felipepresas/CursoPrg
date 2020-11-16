@@ -15,5 +15,6 @@ int main (){
     printf("\nEl resultado es %.2f:", (-(num2) +sqrt((pow(num2,2))-4*num1*num3))/(2*num1));
     printf("\nEl resultado es %.2f:", (-(num2) -sqrt((pow(num2,2))-4*num1*num3))/(2*num1));
 
+   
     system ("pause");
 }     
