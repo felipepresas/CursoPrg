@@ -9,7 +9,7 @@
 				"-g",
 				"${file}",
 				"-o",
-				"C:\\Users\\alumno\\Documents\\curso\\CursoPrg\\compilado\\${fileBasenameNoExtension}.exe"
+				"C:\\Users\\Felipe\\Documents\\Desarrollador\\GitHub\\cursoPrg\\compilado\\${fileBasenameNoExtension}.exe"
 			],
 			"options": {
 				"cwd": "${workspaceFolder}"
