@@ -14,10 +14,6 @@ int main (){
     scanf("%d",&elegido);
     system("cls");
 
-    if (elegido <1 || elegido>9){
-        printf(" No tenemos la distancia de momento\n");
-    }
-
     switch (elegido){
         case 1:
             printf("%s 59 millones de km\n",p1);
@@ -46,7 +42,7 @@ int main (){
         case 9:
             printf("%s 5916 millones de km\n",p9);
             break;       
-        default:
+        default:printf(" No tenemos la distancia de momento\n");
             break;    
     }
     system("pause");
