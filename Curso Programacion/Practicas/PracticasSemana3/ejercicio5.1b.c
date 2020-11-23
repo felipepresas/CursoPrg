@@ -4,19 +4,19 @@
 #include <string.h>
 int main()
 {
-    const char miNombre[6] = "R2D2";
-    char nombre[30];
-    char aux1;
+    const char miNombre[6] = "carlos"; //nombre[80];
+    char nombre[6];
+    // char aux1;
 
     printf("Indique su nombre: ");
     gets(nombre);
     printf("%s", nombre);
 
-    fflush(stdin);
-    aux1 = toupper(nombre);
-    printf("%s", aux1);
+    
+    // aux1 = toupper(nombre);
+    // printf("%s", aux1);
 
-    if (strcmp(aux1, miNombre) == 0)
+    if (strcmp(nombre, miNombre) == 0)
     {
         printf("\nHas introducido tu nombre: %s\n", nombre);
     }
