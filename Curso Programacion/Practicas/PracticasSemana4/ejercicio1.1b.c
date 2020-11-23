@@ -8,15 +8,12 @@ int main()
     scanf("%d", &num2);
     printf("Introduzca numero3: ");
     scanf("%d", &num3);
-
     if (num1 == num2 || num1 == num3 || num2 == num3)
     {
         printf("Alguna variable son iguales");
     }
-
     else
     {
-
         if (num1 > num2 && num1 > num3)
         {
             printf("\nEl numero mayor es :%d \n", num1);
