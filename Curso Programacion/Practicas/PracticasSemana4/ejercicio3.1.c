@@ -13,9 +13,11 @@ la figura con la que trabajar que puede ser triangulo,
 # define M_PI 3.141592653589793238462 //pi
 int main()
 {
-    float base, altura,catetoa,catetob,radio;
+    float catetoa,catetob,radio;
     char figura, minuscula;
     int menu;
+    printf("\t\t\t\t ----Eleccion de figuras----\n");
+    
     printf("Elige la inicial de la figura en la que trabajar:");
     scanf("%c", &figura);
     minuscula = tolower(figura);
