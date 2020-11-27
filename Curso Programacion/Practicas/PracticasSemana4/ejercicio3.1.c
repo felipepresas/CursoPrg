@@ -10,14 +10,15 @@ la figura con la que trabajar que puede ser triangulo,
 #include <stdio.h>
 #include <math.h>
 #include <string.h>
-# define M_PI 3.141592653589793238462 //pi
+//#include <corecrt_math_defines.h>
+#define M_PI 3.141592653589793238462 //pi
 int main()
 {
-    float catetoa,catetob,radio;
+    float catetoa, catetob, radio;
     char figura, minuscula;
     int menu;
     printf("\t\t\t\t ----Eleccion de figuras----\n");
-    
+
     printf("Elige la inicial de la figura en la que trabajar:");
     scanf("%c", &figura);
     minuscula = tolower(figura);
@@ -34,18 +35,18 @@ int main()
         case 1:
             printf("\t\t\t\t---El calculo de la hipotenusa----\n");
             printf("Indique valor del cateto a:");
-            scanf("%f",&catetoa);
+            scanf("%f", &catetoa);
             printf("Indique valor del cateto b:");
-            scanf("%f",&catetob);
-            printf("La hipotenusa es:%.2f \n",sqrt((pow(catetoa,2)) +(pow(catetob,2))));
+            scanf("%f", &catetob);
+            printf("La hipotenusa es:%.2f \n", sqrt((pow(catetoa, 2)) + (pow(catetob, 2))));
             break;
         case 2:
             printf("\t\t\t\t---Area de un triangula---");
             printf("Indique valor del cateto a:");
-            scanf("%f",&catetoa);
+            scanf("%f", &catetoa);
             printf("Indique valor del cateto b:");
-            scanf("%f",&catetob);
-            printf("El area es:%.2f \n",(catetoa*catetob)/2);
+            scanf("%f", &catetob);
+            printf("El area es:%.2f \n", (catetoa * catetob) / 2);
             break;
         case 3:
             printf("Correr mientras puedas");
@@ -65,10 +66,10 @@ int main()
         case 1:
             printf("\t\t\t\t---Area de un rectangulo ---\n");
             printf("Indique valor del cateto a:");
-            scanf("%f",&catetoa);
+            scanf("%f", &catetoa);
             printf("Indique valor del cateto b:");
-            scanf("%f",&catetob);
-            printf("El area es:%.2f \n",catetoa*catetob);
+            scanf("%f", &catetob);
+            printf("El area es:%.2f \n", catetoa * catetob);
             break;
         case 2:
             printf("Correr mientras puedas\n");
@@ -89,14 +90,14 @@ int main()
         case 1:
             printf("\t\t\t\t---La superficie de la circunferencia ---\n");
             printf("Indique valor del radio:");
-            scanf("%f",&radio);
-            printf("La superficie es:%.2f",pow(radio,2)*M_PI);   
+            scanf("%f", &radio);
+            printf("La superficie es:%.2f", pow(radio, 2) * M_PI);
             break;
         case 2:
             printf("\t\t\t\t---El perimetro de una circunferencia\n---");
             printf("Indique valor del radio:");
-            scanf("%f",&radio);
-            printf("El perimetro es:%.2f",2*M_PI*radio);
+            scanf("%f", &radio);
+            printf("El perimetro es:%.2f", 2 * M_PI * radio);
             break;
         case 3:
             printf("Correr mientras puedas\n");
