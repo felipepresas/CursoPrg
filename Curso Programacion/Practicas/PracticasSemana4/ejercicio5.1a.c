@@ -7,84 +7,66 @@ Tambien, adicionalmente, me mostrara cuantos numeros positivos se han introducid
 #include <stdio.h>
 int main()
 {
-    int num1, num2, num3, contadorPos = 0, contadorNeg = 0;
+    int num1, num2, num3;
     printf("Indique lo Numeros a sumar:");
     scanf("%d:%d:%d", &num1, &num2, &num3);
-    if (num1 >= 0)
-    {
-        contadorPos++;
-    }
-    else
-    {
-        contadorNeg++;
-    }
-    if (num2 >= 0)
-    {
-        contadorPos++;
-    }
-    else
-    {
-        contadorNeg++;
-    }
-    if (num3 >= 0)
-    {
-        contadorPos++;
-    }
-    else
-    {
-        contadorNeg++;
-    }
-
     if ((num1 >= 0) && (num2 >= 0) && (num3 >= 0))
     {
         printf("La suma de variable es: %d \n", num1 + num2 + num3);
+        printf("Se han introducido 3 numeros positivos");
+        
     }
     else if ((num1 >= 0) && (num2 >= 0) && (num3 < 0))
     {
         printf("La suma de variable es: %d \n", num1 + num2);
-
+        printf("Se han introducido 2 numeros positivos");
         printf("La suma de variable negativas es: %d \n", num3);
+        printf("Se han introducido 1 numero negativo");
     }
     else if ((num1 >= 0) && (num2 < 0) && (num3 >= 0))
     {
         printf("La suma de variable es: %d \n", num1 + num3);
-
+        printf("Se han introducido 2 numeros positivos");
         printf("La suma de variable negativas es: %d \n", num2);
+         printf("Se han introducido 1 numero negativo");
     }
     else if ((num1 < 0) && (num2 >= 0) && (num3 >= 0))
     {
         printf("La suma de variable es: %d \n", num2 + num3);
-
+        printf("Se han introducido 2 numeros positivos");
         printf("La suma de variable negativas es: %d \n", num1);
+         printf("Se han introducido 1 numero negativo");
     }
     else if ((num1 >= 0) && (num2 < 0) && (num3 < 0))
     {
         printf("La suma de variable es: %d \n", num1);
-
+        printf("Se han introducido 1 numero positivo");
         printf("La suma de variable negativas es: %d \n", num3 + num2);
+         printf("Se han introducido 2 numero negativo");
     }
     else if ((num1 < 0) && (num2 < 0) && (num3 >= 0))
     {
         printf("La suma de variable es: %d \n", num3);
-
+        printf("Se han introducido 1 numero positivo");
         printf("La suma de variable negativas es: %d \n", num1 + num2);
+        printf("Se han introducido 2 numero negativo");
     }
     else if ((num1 < 0) && (num2 >= 0) && (num3 < 0))
     {
         printf("La suma de variable es: %d \n", num2);
-
+           printf("Se han introducido 1 numero positivo");
         printf("La suma de variable negativas es: %d \n", num1 + num3);
+        printf("Se han introducido 2 numero negativo");
     }
     else if ((num1 < 0) && (num2 < 0) && (num3 < 0))
     {
         printf("La suma de variable negativas es: %d \n", num1 + num3 + num2);
+        printf("Se han introducido 3 numeros negativos");
     }
 
     else
     {
         printf("No se esta considetando una condicion \n");
     }
-    printf("La cantidad de numeros positivos es: %d y la cantidad de numeros negativos es: %d \n", contadorPos, contadorNeg);
-
     system("pause");
 }
