@@ -46,7 +46,6 @@ int main (){
     system("pause");
 } */
 
-
 /* #include <stdio.h>
 int main()
 {
@@ -80,18 +79,16 @@ int main()
     system("pause");
 } */
 
-
 #include <stdio.h>
 #include <string.h>
 int main()
 {
     const char alimento[6] = "Arrot";
-    char copia[0];
+    char copia[6];
     printf("\t\t\t\tPrograma que copia una cadena\n");
     strcpy(copia, alimento);
     printf(" Variable alimento: %s \n", alimento);
     printf(" Variable copia: %s \n", copia);
     printf(" Variable copia modificado: %c%c%c%cz \n", copia[0], copia[1], copia[2], copia[3]);
-
     system("pause");
 }
