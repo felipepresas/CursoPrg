@@ -13,7 +13,7 @@ int main()
     printf("Indique su nombre\n");
     gets(nombre);
 
-    if (nombre[0] == "/0")
+    if (nombre[0] != "\0")
     {
         printf("La primera letra es:%c\n", nombre[0]);
     }
@@ -21,7 +21,7 @@ int main()
     {
         printf("final del nombre");
     }
-    if (nombre[1] == "/0")
+    if (nombre[1] != "\0")
     {
         printf("La segunda letra es:%c\n", nombre[1]);
     }
@@ -29,7 +29,7 @@ int main()
     {
         printf("final del nombre");
     }
-    if (nombre[2] == "/0")
+    if (nombre[2] == "\0")
     {
         printf("La tercera letra es:%c\n", nombre[2]);
     }
@@ -37,7 +37,7 @@ int main()
     {
         printf("final del nombre");
     }
-    if (nombre[3] == "/0")
+    if (nombre[3] == "\0")
     {
         printf("La cuarta letra es:%c\n", nombre[3]);
     }
@@ -45,7 +45,7 @@ int main()
     {
         printf("final del nombre");
     }
-    if (nombre[4] == "/0")
+    if (nombre[4] == "\0")
     {
         printf("La quinta letra es:%c\n", nombre[4]);
     }
@@ -53,7 +53,7 @@ int main()
     {
         printf("final del nombre");
     }
-    if (nombre[5] == "/0")
+    if (nombre[5] == "\0")
     {
         printf("La sexta letra es:%c\n", nombre[5]);
     }
@@ -61,7 +61,7 @@ int main()
     {
         printf("final del nombre");
     }
-    if (nombre[6] == "/0")
+    if (nombre[6] == "\0")
     {
         printf("La septima letra es:%c\n", nombre[6]);
     }
@@ -69,7 +69,7 @@ int main()
     {
         printf("final del nombre");
     }
-    if (nombre[7] == "/0")
+    if (nombre[7] == "\0")
     {
         printf("La octava letra es:%c\n", nombre[7]);
     }
