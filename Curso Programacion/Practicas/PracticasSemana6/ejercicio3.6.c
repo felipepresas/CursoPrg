@@ -2,14 +2,24 @@
 
 #include <stdio.h>
 #include <string.h>
-int main (){
-    int i,numero;
+#include <math.h>
+int main()
+{
+    int i, numero,sumaCubos,tam;
+    char conversion[10];
     printf("Indique el numero:");
-    scanf("%d",&numero);
-    printf("tamano %d",sizeof(numero));    
-    for (size_t i = 0; i < sizeof(numero); i++)
+    scanf("%d", &numero);
+    itoa(numero,conversion,10);
+    //printf("el numero es: %d \n",numero);
+    //printf("la conversion es: %s \n",conversion);
+    tam=strlen (conversion);
+    int numeros[tam];
+    
+    for (int i = 0; i < strlen(conversion); i++)
     {
-        //printf("Valor al cubo:%d \n",pow(numero[i],3));
-    }
+        numeros[i]=conversion[i]-'0';
+        sumaCubos=sumaCubos+pow(numeros[i], 3);
+    } 
+    printf("La suma cubos es %d \n",sumaCubos);
     system("pause");
 }
