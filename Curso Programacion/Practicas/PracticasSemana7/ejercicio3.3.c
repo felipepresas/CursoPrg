@@ -19,8 +19,9 @@ int main()
     }
     else
     {
-        printf(" Pulse tecla p para contarpares\n");
-        printf(" Pulse tecla i para impares\n");
+        printf("Pulse tecla p para contarpares\n");
+        printf("Pulse tecla i para impares\n");
+        fflush(stdin);
         scanf("%c",&letra);
         tolower(letra);
         if ('p' == letra)
@@ -29,7 +30,7 @@ int main()
             {
                 if (i % 2 == 0)
                 {
-                    printf("Numeros pares son: %d", i);
+                    printf("Numeros pares son: %d\n", i);
                 }
             }
         }
@@ -38,7 +39,7 @@ int main()
             for (i = num1; i <= num2; i++)
             if (i % 2 != 0)
             {
-                printf("Numeros impares son: %d", i);
+                printf("Numeros impares son: %d\n", i);
             }
         }
         else
