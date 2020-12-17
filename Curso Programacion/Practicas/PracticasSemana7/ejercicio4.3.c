@@ -7,26 +7,25 @@ por un -1 e indicar que posicion ha sido modificada y
 #include <stdio.h>
 int main()
 {
-    int i,j, cant,contZero=0;
+    int i, j, cant, contZero = 0;
     printf("indique la cantidad: ");
-    scanf("%d",&cant);
+    scanf("%d", &cant);
     int cadenaNumeros[cant];
 
-    for ( j = 0; j < cant; j++)
+    for (j = 0; j < cant; j++)
     {
-        printf("Indique el %d numero : ",j+1);
-        scanf("%d",&cadenaNumeros[j]);
+        printf("Indique el %d numero : ", j + 1);
+        scanf("%d", &cadenaNumeros[j]);
     }
-    
-    for ( i = 0; i < cant; i++)
+    for (i = 0; i < cant; i++)
     {
-        if (cadenaNumeros[i]==0)
-        {   
-            cadenaNumeros[i]=-1;
+        if (cadenaNumeros[i] == 0)
+        {
+            cadenaNumeros[i] = -1;
             contZero++;
         }
-        printf("Nuemros son:%d\n",cadenaNumeros[i]);
+        printf("Nuemros son:%d\n", cadenaNumeros[i]);
     }
-    printf("Cantidad de ceros es: %d \n",contZero);
+    printf("Cantidad de ceros es: %d \n", contZero);
     system("pause");
 }
