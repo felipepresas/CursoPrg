@@ -12,7 +12,7 @@ int main (){
     {
           printf("Indique 6 numeros enteros: ");
           scanf("%d",&num[i]);
-          if (num[i]<0)
+          if (num[i]<=0)
           {
               sumNegativos+=num[i];
           }
