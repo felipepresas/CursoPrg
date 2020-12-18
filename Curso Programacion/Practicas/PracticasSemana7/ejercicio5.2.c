@@ -14,7 +14,7 @@ int main()
 {
     int i, dniNum, maxNumDni = 8, posNumDni = 0;
     const int divisorDni = 23;
-    char letra[] = {'T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E'};
+    char letra[23] = "TRWAGMYFPDXBNJZSQVHLCKE";
     printf("Introduzca el dni: ");
     scanf("%d", &dniNum);
 
