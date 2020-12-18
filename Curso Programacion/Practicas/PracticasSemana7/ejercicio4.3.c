@@ -22,9 +22,10 @@ int main()
         if (cadenaNumeros[i] == 0)
         {
             cadenaNumeros[i] = -1;
+            printf("Posicion del 0: %d", i);
             contZero++;
         }
-        printf("Nuemros son:%d\n", cadenaNumeros[i]);
+        printf("Numeros es:%d\n", cadenaNumeros[i]);
     }
     printf("Cantidad de ceros es: %d \n", contZero);
     system("pause");
