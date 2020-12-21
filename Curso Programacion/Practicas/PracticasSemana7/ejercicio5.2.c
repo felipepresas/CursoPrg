@@ -12,7 +12,7 @@ da de resto 14, luego la letra sería la Z: 12345678Z. */
 #include <stdio.h>
 int main()
 {
-    int i, dniNum, maxNumDni = 8, posNumDni = 0;
+    int i, dniNum, posNumDni = 0;
     const int divisorDni = 23;
     char letra[23] = "TRWAGMYFPDXBNJZSQVHLCKE";
     printf("Introduzca el dni: ");
