@@ -8,13 +8,13 @@ A partir de esa cadena, determinar que queremos hacer
 #include <string.h>
 int main()
 {
-    int i, cont=0;
-    char frase[50], menu;
+    int i, cont=0, menu;
+    char frase[50];
     printf("Indique la frase evaluar:");
     gets(frase);
     tolower(frase);
     printf("Indique con un numero una opcion del menu:\n");
-    printf("1- Contar vocales\n 2- Contar espacios\n 3- Contar numero de caracteres\n 4- salir\n");
+    printf(" 1- Contar vocales\n 2- Contar espacios\n 3- Contar numero de caracteres\n 4- salir\n");
     scanf("%d", &menu);
     fflush(stdin);
     switch (menu)
@@ -24,8 +24,7 @@ int main()
         {
             if (frase[i] == 'a' || frase[i] == 'e' || frase[i] == 'i' || frase[i] == 'o' || frase[i] == 'u')
             {
-                cont++;
-                printf("contador: %d",cont);
+                cont ++;
             }
         }
         printf("El numero de vocales es: %d\n", cont);
