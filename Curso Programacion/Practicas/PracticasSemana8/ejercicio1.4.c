@@ -7,7 +7,6 @@ y cuanto vale la suma de ellos */
 int main()
 {
     int i, num, cont = 0, sumNum;
-
     for (i = 0; num != 0; i++)
     {
         printf("indique el numero");
@@ -15,7 +14,6 @@ int main()
         cont++;
         sumNum += num;
     }
-
     printf("La cuenta de numero es :%d \n", cont);
     printf("La sumatoria es :%d \n", sumNum);
 
