@@ -22,7 +22,7 @@ int main()
             sumNum += num;
         }
     }
-    printf("Sumatoria de numeros es:%d ", sumNum);
+    printf("Sumatoria de numeros es:%d \n", sumNum);
 
     system("pause");
 }
