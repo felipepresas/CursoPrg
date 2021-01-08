@@ -6,20 +6,22 @@ fgets(nombre_variable, tamaño, stdin) */
 #include <stdio.h>
 #include <string.h>
 
-int main (){
-    char cad[10];
+int main()
+{
+    char cad[100]="";
     int i;
-    printf("Indique cadena: ");
-    fgets(cad,10,stdin);
 
-    for ( i = 0; i <= '\n'; i++)
+    printf("Indique cadena: ");
+    fgets(cad, sizeof(cad), stdin);
+
+    for (i = 0; cad[i]!='\0'; i++)
     {
-        if (cad[i]=='\n')
+        if (cad[i] == '\n')
         {
-            cad[i]=5;
+            cad[i] = '5';
         }
-        printf("Los caracteres son: %c \n",cad[i]);
-        
+        printf("La cadena es : %s\n", cad[i]);
     }
+    printf("La cadena es : %s\n", cad);
     system("pause");
 }
