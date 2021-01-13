@@ -13,16 +13,14 @@ La primera vez que se ejecuta, mostrar√° una caratula del tipo "FUNCIONES MATEM√
 Pero solo la primera vez
 No es necesario limpiar pantall */
 #include <stdio.h>
-#include <string.h> //
-
+#include <string.h>
 int main()
 {
     int num1, num2, i, total;
     char menu = ' ';
-
     while (menu != 'a' || menu != 'b' || !menu != 'c' || menu != 'd' || menu != 'e' || menu != 'f' || menu != 'g' || menu != 'h')
     {
-        printf("\nFunciones matematicas \n");
+        printf("\t\t\t\t\t\nFunciones matematicas \n");
         printf("a) suma\n");
         printf("b) resta\n");
         printf("c) multiplicacion\n");
@@ -36,6 +34,7 @@ int main()
         fflush(stdin);
         menu = tolower(menu);
 
+        #pragma region Sumar
         if (menu == 'a')
         {
             printf("\nIndique numeros para sumar\n");
@@ -44,8 +43,11 @@ int main()
             printf("Indique el segundo numero\n");
             scanf("%d", &num2);
             total = num1 + num2;
-            printf("Resultado es:%d", total);
+            printf("Resultado es:%d \n", total);
+            fflush(stdin);
         }
+        #pragma endregion
+        #pragma region Resta
         else if (menu == 'b')
         {
             printf("Indique numeros para restar\n");
@@ -54,8 +56,11 @@ int main()
             printf("Indique el segundo numero\n");
             scanf("%d", &num2);
             total = num1 - num2;
-            printf("Resultado es:%d", total);
+            printf("Resultado es:%d \n", total);
+            fflush(stdin);
         }
+        #pragma endregion
+        #pragma region Multiplicacion
         else if (menu == 'c')
         {
             printf("Indique numeros para multiplicar\n");
@@ -64,8 +69,11 @@ int main()
             printf("Indique el segundo numero\n");
             scanf("%d", &num2);
             total = num1 * num2;
-            printf("Resultado es:%d", total);
+            printf("Resultado es:%d \n", total);
+            fflush(stdin);
         }
+        #pragma endregion
+        #pragma region division
         else if (menu == 'd')
         {
             printf("Indique numeros para division\n");
@@ -74,9 +82,12 @@ int main()
 
             printf("Indique el segundo numero\n");
             scanf("%d", &num2);
-            total = num1 / num2;
-            printf("Resultado es:%d", total);
+            total = (float)(num1 / num2);
+            printf("Resultado es:%d \n", total);
+            fflush(stdin);
         }
+        #pragma endregion
+        #pragma region Con/tador de pares
         else if (menu == 'e')
         {
             printf("Indique numero para indicar si es par\n");
@@ -85,13 +96,16 @@ int main()
             total = num1 % 2;
             if (total == 0)
             {
-                printf("Resultado es par");
+                printf("Resultado es par\n");
             }
             else
             {
-                printf("Resultado es impar");
+                printf("Resultado es impar\n");
             }
+            fflush(stdin);
         }
+        #pragma endregion
+        #pragma region Multiplo3
         else if (menu == 'f')
         {
             printf("Indique numero para saber si es multiplo de 3\n");
@@ -100,28 +114,34 @@ int main()
             total = num1 % 3;
             if (total == 0)
             {
-                printf("Resultado es multiplo de 3");
+                printf("Resultado es multiplo de 3\n");
             }
             else
             {
-                printf("Resultado no es multiplo");
+                printf("Resultado no es multiplo\n");
             }
+            fflush(stdin);
         }
+        #pragma endregion
+        #pragma region Numeros Positivos
         else if (menu == 'g')
         {
             printf("Indique numero para indicar positivo\n");
             printf("Indique el primer numero\n");
             scanf("%d", &num1);
-           
+
             if (num1 >= 0)
             {
-                printf("Resultado es positivo");
+                printf("Resultado es positivo\n");
             }
             else
             {
-                printf("Resultado es negativo");
+                printf("Resultado es negativo\n");
             }
+            fflush(stdin);
         }
+        #pragma endregion
+        #pragma region Salir
         else if (menu == 'h')
         {
             printf("Seguro que desea Salir?(s/n)\n");
@@ -133,17 +153,20 @@ int main()
             }
             else if (menu == 'n')
             {
-                menu=' ';
+                menu = ' ';
             }
             else
             {
-               printf("\nOtro caracter no contemplado\n");   
+                printf("\nOtro caracter no contemplado\n");
             }
+            fflush(stdin);
         }
+        #pragma endregion
         else
         {
-         printf("\n Otra opcion no contemplado \n");
+            printf("\n Otra opcion no contemplado\n");
         }
     }
+
     system("pause");
 }
