@@ -13,6 +13,8 @@ int main()
 {
     int i=0, contadorPos = 0, contadorNeg = 0;
     char num[50]= {1,1, 2, 3};
+
+    int void contadNum()
     
     while (num[i]!= 0)
     {
