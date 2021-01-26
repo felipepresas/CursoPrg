@@ -19,8 +19,6 @@ int main()
     printf("%c ",pedirCaracter(letra));
     printf("%c ",combertirMinuscula( pedirCaracter(letra)));
     
-    
-     
     pedirDecimal(min ,max ,"Edad");
     
     system("pause");

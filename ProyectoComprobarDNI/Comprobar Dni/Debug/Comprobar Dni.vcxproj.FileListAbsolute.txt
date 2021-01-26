@@ -1,0 +1,2 @@
+C:\Users\Felipe\Documents\Desarrollador\Curso\CursoPrg\ProyectoComprobarDNI\Comprobar Dni\Debug\Comprobar Dni.exe
+C:\Users\Felipe\Documents\Desarrollador\Curso\CursoPrg\ProyectoComprobarDNI\Comprobar Dni\Debug\Comprobar Dni.pdb

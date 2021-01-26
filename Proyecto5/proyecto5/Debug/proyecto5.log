@@ -1,0 +1,5 @@
+﻿  main.c
+C:\Users\Felipe\Documents\Desarrollador\Curso\CursoPrg\Curso Programacion\Practicas\CodigoClase\proyecto1\main.c(23,10): warning C4013: 'caratula' sin definir; se supone que extern devuelve como resultado int
+C:\Users\Felipe\Documents\Desarrollador\Curso\CursoPrg\Curso Programacion\Practicas\CodigoClase\proyecto1\main.c(31,42): warning C4013: 'quitarNfgets' sin definir; se supone que extern devuelve como resultado int
+C:\Users\Felipe\Documents\Desarrollador\Curso\CursoPrg\Curso Programacion\Practicas\CodigoClase\proyecto1\main.c(31,9): warning C4477: 'printf' : la cadena de formato '%s' requiere un argumento de tipo 'char *', pero el argumento variádico 1 tiene el tipo 'int'
+  proyecto5.vcxproj -> C:\Users\Felipe\Documents\Desarrollador\Curso\CursoPrg\Proyecto5\proyecto5\Debug\proyecto5.exe

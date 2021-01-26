@@ -1,0 +1,4 @@
+﻿  Source.c
+C:\Users\Felipe\Documents\Desarrollador\Curso\CursoPrg\Curso Programacion\ProyectoComprobarDNI\Comprobar Dni\Source.c(32,17): error C2082: nueva definición del parámetro formal 'cadena'
+C:\Users\Felipe\Documents\Desarrollador\Curso\CursoPrg\Curso Programacion\ProyectoComprobarDNI\Comprobar Dni\Source.c(35,6): warning C4013: 'gets' sin definir; se supone que extern devuelve como resultado int
+C:\Users\Felipe\Documents\Desarrollador\Curso\CursoPrg\Curso Programacion\ProyectoComprobarDNI\Comprobar Dni\Source.c(60,24): warning C4013: 'strlen' sin definir; se supone que extern devuelve como resultado int

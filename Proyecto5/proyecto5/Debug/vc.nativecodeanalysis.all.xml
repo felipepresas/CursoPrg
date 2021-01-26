@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?><DEFECTS><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Felipe\Documents\Desarrollador\Curso\CursoPrg\Proyecto2\Project2\</FILEPATH>
+      <FILENAME>inout.c</FILENAME>
+      <LINE>9</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>6031</DEFECTCODE>
+    <DESCRIPTION>Se omitió el valor devuelto: 'scanf'.</DESCRIPTION>
+    <FUNCTION>pedirEntero</FUNCTION>
+    <DECORATED>pedirEntero</DECORATED>
+    <FUNCLINE>5</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\Felipe\Documents\Desarrollador\Curso\CursoPrg\Proyecto2\Project2\</FILEPATH>
+      <FILENAME>inout.c</FILENAME>
+      <LINE>20</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>6031</DEFECTCODE>
+    <DESCRIPTION>Se omitió el valor devuelto: 'scanf'.</DESCRIPTION>
+    <FUNCTION>pedirFloat</FUNCTION>
+    <DECORATED>pedirFloat</DECORATED>
+    <FUNCLINE>16</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT></DEFECTS>

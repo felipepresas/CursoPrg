@@ -1,0 +1,6 @@
+﻿  main.c
+C:\Users\Felipe\Documents\Desarrollador\Curso\CursoPrg\Proyecto2\Project2\main.c(8,22): warning C4013: 'peticion_datos' sin definir; se supone que extern devuelve como resultado int
+C:\Users\Felipe\Documents\Desarrollador\Curso\CursoPrg\Proyecto2\Project2\main.c(9,50): warning C4013: 'sumadigitos' sin definir; se supone que extern devuelve como resultado int
+  inout.c
+  Generando código...
+  proyecto4.vcxproj -> C:\Users\Felipe\Documents\Desarrollador\Curso\CursoPrg\proyecto4\proyecto4\Debug\proyecto4.exe
