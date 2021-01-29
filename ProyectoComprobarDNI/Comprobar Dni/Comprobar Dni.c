@@ -11,6 +11,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdbool.h >
+#include <ctype.h>
 #include "Header.h"
 
 int main() {
@@ -18,14 +20,10 @@ int main() {
 	int num= 54658489;
 	char dniIndicado[50]="",copia[50];
 
+	strcpy(copia,pedirCadena(dniIndicado));
+	
+	dniCorrecto(copia);
 
-	pedirCadena(dniIndicado);
-
-	/*gets(dniIndicado);
-	isDigit();*/
-	printf("%s \n", dniIndicado);
-
-	printf("%c",localizarLetra(num));
 
 	system("pause");
 

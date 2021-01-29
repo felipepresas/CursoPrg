@@ -1,5 +1,9 @@
 /*DESARROLLOS DE LAS FUNCIONES*/
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdbool.h>
+#include <ctype.h>
 #include "Header.h"
 
 int pedirEntero(int num) {
@@ -28,8 +32,7 @@ char pedirCaracter(char caracter) {
 	return caracter;
 }
 
-char* pedirCadena(char * cadena) {
-	char cadena[50];
+char* pedirCadena(char * cadena[50]) {
 	fflush(stdin);
 	printf("Introduce una cadena: ");
 	gets(cadena);
@@ -84,3 +87,42 @@ char localizarLetra(int dniNum)
 	printf("Posicion del Dni es: %d\n", posNumDni);
 	return letra[i];
 }
+bool dniCorrecto(char * cadenaDni)
+{
+	char coleccionDni[50]=" ";
+	int i, numDni=0;
+	bool respuesta=false;
+
+		if (strlen(cadenaDni) != 9)
+		{
+			printf("\nhas introducido una cadena incorrecta\n");
+		}
+		else
+		{
+			for (i = 0; i < 8; i++)
+			{
+				if (isdigit(cadenaDni[i]) && !isdigit(cadenaDni[8]))
+				{
+					coleccionDni[i] = cadenaDni[i];
+				}
+				else
+				{
+					printf("\nhas introducido una cadena incorrecta\n");
+				}
+			}
+			numDni = atoi(coleccionDni);
+			printf("coleccion numero %d\n", numDni);
+
+			if (localizarLetra(numDni) == toupper(cadenaDni[8]))
+			{
+				printf("La letra coincide\n");
+			}
+			else
+			{
+				printf("La letra no es correcta\n");
+			}
+		}
+	
+	return respuesta;
+}
+

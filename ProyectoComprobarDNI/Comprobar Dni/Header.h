@@ -9,4 +9,5 @@ void comprobarFloat(float, float, float);
 char transformarCaracter(char, char, char); //transforma un char en minus
 void caratula(char*, char, int);
 char localizarLetra(int);
+bool dniCorrecto(char*);
 

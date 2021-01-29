@@ -1,4 +1,5 @@
 ﻿  Source.c
-C:\Users\Felipe\Documents\Desarrollador\Curso\CursoPrg\Curso Programacion\ProyectoComprobarDNI\Comprobar Dni\Source.c(32,17): error C2082: nueva definición del parámetro formal 'cadena'
-C:\Users\Felipe\Documents\Desarrollador\Curso\CursoPrg\Curso Programacion\ProyectoComprobarDNI\Comprobar Dni\Source.c(35,6): warning C4013: 'gets' sin definir; se supone que extern devuelve como resultado int
-C:\Users\Felipe\Documents\Desarrollador\Curso\CursoPrg\Curso Programacion\ProyectoComprobarDNI\Comprobar Dni\Source.c(60,24): warning C4013: 'strlen' sin definir; se supone que extern devuelve como resultado int
+C:\Users\Felipe\Documents\Desarrollador\Curso\CursoPrg\ProyectoComprobarDNI\Comprobar Dni\Source.c(35,26): warning C4028: parámetro formal 1 distinto de la declaración
+C:\Users\Felipe\Documents\Desarrollador\Curso\CursoPrg\ProyectoComprobarDNI\Comprobar Dni\Source.c(38,6): warning C4013: 'gets' sin definir; se supone que extern devuelve como resultado int
+C:\Users\Felipe\Documents\Desarrollador\Curso\CursoPrg\ProyectoComprobarDNI\Comprobar Dni\Source.c(39,15): warning C4047: 'return': 'char *' es distinto en los niveles de direccionamiento indirecto de 'char **'
+  Comprobar Dni.vcxproj -> C:\Users\Felipe\Documents\Desarrollador\Curso\CursoPrg\ProyectoComprobarDNI\Comprobar Dni\Debug\Comprobar Dni.exe
