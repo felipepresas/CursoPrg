@@ -16,19 +16,13 @@ char *misDatos[10]; */
 
 int main(int argc, char *argv[])
 {
-
-    int i, j, contadorFallos;
-    char *logging[9][20];
-    *logging[0] = "felipe";
-    *logging[1] = "1234";
-    *logging[2] = "carlos";
-    *logging[3] = "1234";
-    *logging[4] = "inakimanco";
-    *logging[5] = "1234";
-    *logging[6] = "joseantonio";
-    *logging[7] = "1234";
-    *logging[8] = "pepe";
-    *logging[9] = "1234";
+    int i, j,k, contadorIntentos,contadorConexion;
+    char logging[10][20] = {
+        "felipe", "1234",
+        "carlos", "1234",
+        "soler", "1234",
+        "jose antonio", "1234",
+        "pepe", "1234"};
 
     char contrasena[20];
 
@@ -39,40 +33,40 @@ int main(int argc, char *argv[])
     else
     {
         printf("\n\nINTRODUCCION DE DATOS\n\n");
-        printf("%s\n", argv[1]);
+        printf("El usuario%s\n", argv[1]);
 
-        if (strcmp(argv[1], *logging[0]) == 0 || strcmp(argv[1], *logging[2]) == 0)
+        for ( k = 0; k < 5; k++,contadorConexion)
+        {
+        if (strcmp(argv[1], logging[k]) == 0 )
         {
             printf("correcto\n");
             printf("Introduce la contrasena:\n");
             gets(contrasena);
-
-            for (i = 0; i < 2; i++)
+            for (i = 0, contadorIntentos = 1; i < 3; i++, contadorIntentos++)
             {
                 for (j = 0; j < 5; j++)
                 {
-                    printf(" muestra control%s %s\n",*logging[j + 1],*logging[j]);
-                    if (strcmp(contrasena, *logging[j + 1]) == 0 && strcmp(argv[1], *logging[j]) == 0)
+                    if (strcmp(contrasena, logging[j + 1]) == 0 && strcmp(argv[1], logging[j]) == 0)
                     {
-                        printf("Correcto\n");
+                        printf("Bienvenido\n");
                         return 0;
                     }
-                    else
-                    {
-                        fflush(stdin);
-                        printf("Incorrecto\n");
-                        printf("Introduce la contrasena:\n");
-                        gets(contrasena); 
-
-                    }
                 }
+                fflush(stdin);
+                printf("Incorrecto\n");
+                printf("Intento %d: prueba de nuevo:\n", contadorIntentos);
+                gets(contrasena);
             }
         }
         else
         {
-            printf("Incorrecto\n");
+            contadorConexion++;
+        }
         }
     }
-
+    if (contadorConexion == 5)
+    {
+        printf("Usuario incorrecto");
+    }
     system("pause");
 }
