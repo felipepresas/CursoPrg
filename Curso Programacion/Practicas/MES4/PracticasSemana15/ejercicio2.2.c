@@ -70,21 +70,21 @@ int main(int argc, char *argv[])
         {
             compruebaReintegro++;
         }
-        if (compruebaAciertos==6&&compruebaReintegro==1)
+        if (compruebaAciertos == 6 && compruebaReintegro == 1)
         {
             printf("Ganaste la Loteria\n");
         }
-        else if (compruebaAciertos<3&&compruebaReintegro==1)
+        else if (compruebaAciertos < 3 && compruebaReintegro == 1)
         {
-             printf("Reintegro devuelve lo jugado\n");
+            printf("Reintegro devuelve lo jugado\n");
         }
-        else if (compruebaAciertos>=3&&compruebaReintegro==1)
+        else if (compruebaAciertos >= 3 && compruebaReintegro == 1)
         {
-             printf("Reintegro devuelve lo jugado\n");
+            printf("Reintegro devuelve lo jugado\n");
         }
         else
         {
-             printf("No tienes premio\n");
+            printf("No tienes premio\n");
         }
     }
     printf("\n%d aciertos\n", compruebaAciertos);
@@ -92,7 +92,6 @@ int main(int argc, char *argv[])
 
     system("pause");
 }
-
 int numLot()
 {
     int loteria;
