@@ -9,9 +9,9 @@ struct datos
 
 int main()
 {
-    struct datos logging[20]={"felipe","1234","Luis","1234"};
+    struct datos logging[20] = {"felipe", "1234", "Luis", "1234"};
 
-   char usuario[20];
+    char usuario[20];
     char contrasena[20];
 
     int i, j, k, contadorIntentos, contadorConexion;
@@ -48,7 +48,6 @@ int main()
             contadorConexion++;
         }
     }
-
     if (contadorConexion == 5)
     {
         printf("Usuario incorrecto");
