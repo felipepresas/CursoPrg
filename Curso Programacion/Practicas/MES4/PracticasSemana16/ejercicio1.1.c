@@ -8,7 +8,7 @@ struct datos
 };
 int main(int argc, char *argv[])
 {
-    struct datos logging[20] = {"felipe", "1234", "Luis", "1234"};
+    struct datos logging[3] = {"felipe", "1234", "Carlos Soler", "1234"};
 
     char contrasena[20];
 
@@ -19,7 +19,6 @@ int main(int argc, char *argv[])
     }
     else
     {
-
         printf("\n\nINTRODUCCION DE DATOS\n\n");
         printf("Indique Usuario\n");
         printf("\nEl usuario%s\n", argv[1]);
@@ -52,7 +51,7 @@ int main(int argc, char *argv[])
                 contadorConexion++;
             }
         }
-        if (contadorConexion == 5)
+        if (contadorConexion == 3)
         {
             printf("Usuario incorrecto");
         }
