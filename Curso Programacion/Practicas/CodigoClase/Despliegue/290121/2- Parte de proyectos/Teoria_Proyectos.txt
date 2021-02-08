@@ -1,0 +1,21 @@
+**Nota: es importantísimo que a la hora de partir un código, seamos ordenados y no tengamos todo mezclado. El trabajo con carpetas resulta fundamental.!!!!
+/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/
+
+Cuando trabajamos con funciones, lo ideal es que sean reutilizables.
+
+Para ello, C tiene la capacidad de permitir diferenciar 3 tipos de archivo: main, prototipos, desarrollos.
+
+1) Los prototipos, se guardan en un archivo con extensión ".h"(header). 
+Este archivo ".h" debe estar incluido en el main y en el archivo de desarrollo de funciones. ¿Cómo? A través de la directiva #include (ya la conocemos). Pero ojo, porque estos archivos .h se insertan entre comillas dobles. -> #include "miarchivo.h"
+
+NOTA: este archivo ".h" NO LLEVA INCLUDES
+
+2) Necesito crear el archivo de desarrollo de funciones. Tendrá el mismo nombre que el archivo de prototipos pero con extensión ".c". No me debo olvidar de añadir su ".h" correspondiente.
+
+En este archivo vamos a colocar el desarrollo de las funciones.
+
+3) Creo el proyecto en la misma carpeta donde he juntado los ".c" y los ".h".
+
+Todo proyecto debe tener asociado un archivo que se llame "main.c". Si no lo tengo, lo creo. Si lo tengo, borro el que se crea automáticamente, renombro a "main.c" el que quiero usar, y lo inserto al proyecto JUNTO CON EL RESTO DE ARCHIVOS.
+
+4) Por último, compilamos y ejecutamos

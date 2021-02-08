@@ -1,0 +1,17 @@
+argc y argv se comportan como 2 parámetros más pero que en este caso, los paso a la hora de ejecutar el programa (debemos recordar que la funcion main no recibe datos de ninguna otra funcion, pues que es la principal).
+
+argc -> es un tipo entero (%d)
+argv -> es un tipo string (%s) pero "multidimensional"
+
+Debo recordar que el parámetro 0 de cualquier programa (es decir, el primero de ellos) es el propio nombre del programa.
+
+Para poder pasar parámetros a un programa en C debo ejecutarlo desde linea de comandos. Para esto, es necesario SOLAMENTE compilar desde el IDE, ya que la ejecución se hará directamente en terminal
+
+1 - ¿Como lo hago? 
+
+Me situo en la carpeta donde está el ejecutable y pongo su nombre sin extension; al lado, separados por espacios, cada uno de los parametros.
+Como tengo que ejecutar desde linea de comandos, solamente tengo que compilar.
+
+2- ¿Como llego a la linea de comandos?
+windows+R -> ejecutar
+escribo cmd
