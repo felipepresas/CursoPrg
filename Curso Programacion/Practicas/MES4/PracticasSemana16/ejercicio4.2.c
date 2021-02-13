@@ -8,8 +8,8 @@ y la muestre por pantalla (es decir, no devuelve nada */
 
 char *concatFe(char *,char *);
 
-int main (){
-    
+int main (int argc, char *argv[]){
+    concatFe("hola,mundo");
 }
 
 char * concatFe(char *cad1,char *cad2){
